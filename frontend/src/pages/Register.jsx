@@ -32,10 +32,10 @@ function Register() {
     <div style={styles.container}>
       <div style={styles.card}>
         <div style={styles.logoRow}>
-          <span style={styles.logo}>💰 ExpenseWise</span>
+          <span style={styles.logo}>🔍 Lost & Found</span>
         </div>
         <h2 style={styles.title}>Create Account</h2>
-        <p style={styles.subtitle}>Start tracking your expenses today</p>
+        <p style={styles.subtitle}>Report and track lost & found items</p>
         {error && <div style={styles.error}>{error}</div>}
         <form onSubmit={handleSubmit}>
           <div style={styles.inputGroup}>

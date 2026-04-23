@@ -32,10 +32,10 @@ function Login() {
     <div style={styles.container}>
       <div style={styles.card}>
         <div style={styles.logoRow}>
-          <span style={styles.logo}>💰 ExpenseWise</span>
+          <span style={styles.logo}>🔍 Lost & Found</span>
         </div>
         <h2 style={styles.title}>Welcome Back</h2>
-        <p style={styles.subtitle}>Login to manage your expenses</p>
+        <p style={styles.subtitle}>Login to manage lost & found items</p>
         {error && <div style={styles.error}>{error}</div>}
         <form onSubmit={handleSubmit}>
           <div style={styles.inputGroup}>
