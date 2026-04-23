@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path');
 
 dotenv.config();
 
@@ -14,14 +13,14 @@ app.use(express.json());
 
 // Routes
 const authRoutes = require('./routes/auth');
-const expenseRoutes = require('./routes/expenses');
+const itemRoutes = require('./routes/items');
 
 app.use('/api', authRoutes);
-app.use('/api', expenseRoutes);
+app.use('/api', itemRoutes);
 
 // Test route
 app.get('/', (req, res) => {
-  res.send('Expense Manager API is running...');
+  res.send('Lost & Found API is running...');
 });
 
 // Connect to MongoDB and start server
